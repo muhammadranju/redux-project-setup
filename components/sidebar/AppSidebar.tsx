@@ -44,48 +44,6 @@ type NavItem = {
 const NAV_MAIN: NavItem[] = [
   { title: "Overview", url: "/dashboard/overview", icon: <CircleDollarSign /> },
   { title: "Users", url: "/dashboard/users", icon: <PiUsersThreeBold /> },
-  {
-    title: "Small Business",
-    url: "/dashboard/small-business",
-    icon: <Handshake />,
-  },
-  {
-    title: "Business Planning",
-    url: "/dashboard/business-planning",
-    icon: <ChartGantt />,
-  },
-  {
-    title: "Success Path",
-    url: "/dashboard/success-path",
-    icon: <PiPersonSimpleRunBold />,
-  },
-  {
-    title: "Coaching",
-    url: "/dashboard/coaching",
-    icon: <PiGraduationCapBold />,
-  },
-  { title: "Boot Camp", url: "/dashboard/boot-camp", icon: <PiTentBold /> },
-  {
-    title: "Community",
-    url: "/dashboard/community",
-    icon: <HiMiniUserGroup />,
-  },
-  {
-    title: "Mock Interview",
-    url: "/dashboard/mock-interview",
-    icon: <PiStudentBold />,
-  },
-  {
-    title: "Feedback",
-    url: "/dashboard/feedback",
-    icon: <MessagesSquare />,
-  },
-  { title: "Notification", url: "/dashboard/notification", icon: <BellRing /> },
-  {
-    title: "Terms & Conditions",
-    url: "/dashboard/terms-conditions",
-    icon: <MdOutlinePolicy />,
-  },
 ];
 
 function SidebarNavItem({ item, active }: { item: NavItem; active: boolean }) {

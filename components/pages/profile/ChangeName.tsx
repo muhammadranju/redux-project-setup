@@ -73,57 +73,5 @@ export default function ChangeName() {
     }
   };
 
-  return (
-    <>
-      <BackButton />
-      <Card className="w-full mt-8 max-w-xl mx-auto shadow-[2px_4px_4px_rgba(0,0,0,0.1)] border-0">
-        <LogoComponent
-          title="Change Name"
-          paragraph="Tech Advantage Admin Access"
-        />
-
-        <CardContent className="px-8 pb-8">
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <FormField
-              id="firstName"
-              label="First Name"
-              placeholder="Enter your First Name"
-              value={firstName}
-              onChange={(e) => setFirstName(e.target.value)}
-            />
-            <FormField
-              id="lastName"
-              label="Last Name"
-              placeholder="Enter your Last Name"
-              value={lastName}
-              onChange={(e) => setLastName(e.target.value)}
-            />
-
-            <Button
-              type="submit"
-              className="w-full h-12 bg-black hover:bg-gray-800 text-white font-medium"
-              disabled={isLoading}
-            >
-              {isLoading ? (
-                <>
-                  <ClipLoader color="#ffffff" size={16} />
-                </>
-              ) : (
-                <>
-                  <Save />
-                  Save & Continue
-                </>
-              )}
-            </Button>
-          </form>
-        </CardContent>
-      </Card>
-      <DialogTriggerComponent
-        isOpen={isOpen}
-        setIsOpen={setIsOpen}
-        title="Name Updated🎉"
-        description="Your name has been updated successfully."
-      />
-    </>
-  );
+  return <></>;
 }

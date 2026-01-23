@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 };
 
 const page = () => {
-  return <div>Verify OTP</div>;
+  return <VerifyOTP />;
 };
 
 export default page;
