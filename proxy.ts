@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
-export async function middleware(req: NextRequest) {
+export default async function proxy(req: NextRequest) {
   const { pathname } = req.nextUrl;
 
   // Define public routes that don't require authentication
@@ -13,7 +13,6 @@ export async function middleware(req: NextRequest) {
 
   // Retrieve the authentication token from cookies
   const token = req.cookies.get("token");
-
 
   // If no token is found, redirect to the login page
   if (!token) {
